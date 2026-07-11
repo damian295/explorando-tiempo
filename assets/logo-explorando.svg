@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 285" role="img" aria-labelledby="title desc">
+  <title id="title">Explorando por el Tiempo</title>
+  <desc id="desc">Marca tipográfica con un reloj orbital inclinado</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#75e9ff"/>
+      <stop offset=".48" stop-color="#b898ff"/>
+      <stop offset="1" stop-color="#ffb56d"/>
+    </linearGradient>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(116 138) rotate(-16)">
+    <ellipse rx="96" ry="42" fill="none" stroke="url(#g)" stroke-width="5" opacity=".85" filter="url(#glow)"/>
+    <ellipse rx="63" ry="63" fill="none" stroke="#fff" stroke-width="3" opacity=".88"/>
+    <path d="M0-46V0L31 18" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle r="8" fill="#fff"/>
+    <circle cx="-82" cy="-28" r="8" fill="#75e9ff" filter="url(#glow)"/>
+    <circle cx="75" cy="31" r="6" fill="#ffb56d" filter="url(#glow)"/>
+    <path d="M-26-69l6-15M26-69l-6-15M63-25l15-5M63 25l15 5M26 69l-6 15M-26 69l6 15M-63 25l-15 5M-63-25l-15-5" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".75"/>
+  </g>
+  <g fill="#fff" font-family="Montserrat, Arial, sans-serif">
+    <text x="229" y="93" font-size="50" font-weight="800" letter-spacing="1">EXPLORANDO</text>
+    <text x="232" y="137" font-size="24" font-weight="600" letter-spacing="8">POR EL</text>
+    <text x="224" y="220" font-size="88" font-weight="900" letter-spacing="-3">TIEMPO</text>
+  </g>
+  <path d="M227 239H689" stroke="url(#g)" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+</svg>
