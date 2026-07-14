@@ -44,7 +44,10 @@
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <div class="status-pill"><span></span>Nueva experiencia · En preparación</div>
-          <img class="experience-logo" src="assets/logo-explorando-full.png" alt="Explorando por el Tiempo">
+          <div class="experience-brand">
+            <span class="brand-light" aria-hidden="true"></span>
+            <img class="experience-logo" src="assets/logo-explorando-horizontal-color.png" alt="Explorando por el Tiempo">
+          </div>
           <h1 id="hero-title">Entrá a una máquina del tiempo</h1>
           <p class="hero-lead">Una visita inmersiva del Museo Scasso que combina proyecciones envolventes, relato en vivo y objetos de colección para viajar por grandes transformaciones del Universo, la vida y nuestro territorio.</p>
           <div class="hero-actions">
@@ -52,31 +55,43 @@
             <a class="button button-ghost" href="https://reservas.museoscasso.com.ar/">Volver a reservas</a>
           </div>
           <div class="quick-facts" aria-label="Características principales">
-            <span>Visita guiada inmersiva</span>
-            <span>Relato, objetos y videomapping</span>
-            <span>Museo Scasso · San Nicolás</span>
+            <span><img src="assets/logo-explorando-galaxia-source.png" alt="" aria-hidden="true">Visita guiada inmersiva</span>
+            <span><img src="assets/logo-explorando-galaxia-source.png" alt="" aria-hidden="true">Relato, objetos y videomapping</span>
+            <span><img src="assets/logo-explorando-galaxia-source.png" alt="" aria-hidden="true">Museo Scasso · San Nicolás</span>
           </div>
         </div>
 
-        <div class="time-scene reveal" aria-label="Representación abstracta de una máquina del tiempo">
-          <div class="portal-shell">
-            <div class="orbit orbit-one"><i></i></div>
-            <div class="orbit orbit-two"><i></i></div>
-            <div class="orbit orbit-three"><i></i></div>
-            <div class="clock-face">
-              <b class="tick t1"></b><b class="tick t2"></b><b class="tick t3"></b><b class="tick t4"></b>
-              <b class="tick t5"></b><b class="tick t6"></b><b class="tick t7"></b><b class="tick t8"></b>
-              <b class="tick t9"></b><b class="tick t10"></b><b class="tick t11"></b><b class="tick t12"></b>
-              <span class="hand hand-hour"></span>
-              <span class="hand hand-minute"></span>
-              <span class="clock-center"></span>
-            </div>
-            <div class="portal-core"></div>
+        <div class="time-scene reveal" aria-label="Galaxia-reloj inspirada en la identidad de Explorando por el Tiempo">
+          <div class="galaxy-machine">
+            <div class="machine-glow" aria-hidden="true"></div>
+            <img class="galaxy-body galaxy-body-blur" src="assets/galaxy-body.png" alt="" aria-hidden="true">
+            <img class="galaxy-body galaxy-body-main" src="assets/galaxy-body.png" alt="" aria-hidden="true">
+            <svg class="galaxy-stars" viewBox="0 0 1065 675" aria-hidden="true">
+              <defs>
+                <filter id="starGlow" x="-200%" y="-200%" width="400%" height="400%">
+                  <feGaussianBlur stdDeviation="4" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+              </defs>
+              <g filter="url(#starGlow)">
+                <circle r="4" fill="#e4298a"><animateMotion dur="12s" repeatCount="indefinite" path="M510 307 C690 210 855 135 984 184"/><animate attributeName="opacity" values="0;.9;0" dur="12s" repeatCount="indefinite"/></circle>
+                <circle r="3" fill="#e4298a"><animateMotion dur="15s" begin="-5s" repeatCount="indefinite" path="M510 307 C720 265 885 270 1010 350"/><animate attributeName="opacity" values="0;.8;0" dur="15s" begin="-5s" repeatCount="indefinite"/></circle>
+                <circle r="3.4" fill="#f47a35"><animateMotion dur="14s" begin="-8s" repeatCount="indefinite" path="M510 307 C670 385 780 520 812 630"/><animate attributeName="opacity" values="0;.85;0" dur="14s" begin="-8s" repeatCount="indefinite"/></circle>
+                <circle r="3" fill="#f7ba32"><animateMotion dur="13s" begin="-3s" repeatCount="indefinite" path="M510 307 C365 380 255 490 182 542"/><animate attributeName="opacity" values="0;.8;0" dur="13s" begin="-3s" repeatCount="indefinite"/></circle>
+                <circle r="2.8" fill="#b23472"><animateMotion dur="16s" begin="-11s" repeatCount="indefinite" path="M510 307 C325 305 175 245 72 165"/><animate attributeName="opacity" values="0;.75;0" dur="16s" begin="-11s" repeatCount="indefinite"/></circle>
+                <circle r="2.6" fill="#ffffff"><animateMotion dur="11s" begin="-7s" repeatCount="indefinite" path="M510 307 C390 220 300 105 250 68"/><animate attributeName="opacity" values="0;.8;0" dur="11s" begin="-7s" repeatCount="indefinite"/></circle>
+                <circle r="2.4" fill="#b23472"><animateMotion dur="18s" begin="-13s" repeatCount="indefinite" path="M510 307 C570 160 690 90 850 118"/><animate attributeName="opacity" values="0;.65;0" dur="18s" begin="-13s" repeatCount="indefinite"/></circle>
+              </g>
+            </svg>
+            <span class="core-light" aria-hidden="true"></span>
+            <img class="clock-layer clock-hand clock-hand-long" src="assets/clock-hand-long.png" alt="" aria-hidden="true">
+            <img class="clock-layer clock-hand clock-hand-short" src="assets/clock-hand-short.png" alt="" aria-hidden="true">
+            <img class="clock-layer clock-hub" src="assets/clock-hub.png" alt="" aria-hidden="true">
           </div>
           <div class="time-label label-cosmos">Cosmos</div>
           <div class="time-label label-life">Vida</div>
           <div class="time-label label-territory">Territorio</div>
-          <div class="scene-caption">El espacio se transforma. El guía conduce el viaje. Los objetos acercan las evidencias.</div>
+          <div class="scene-caption">La galaxia permanece. Sus estrellas se desplazan. El reloj retrocede para iniciar el viaje.</div>
         </div>
       </div>
       <div class="hero-floor" aria-hidden="true"></div>
@@ -170,7 +185,7 @@
         <img src="assets/logo-scasso.png" alt="Museo de Ciencias Naturales A. Scasso">
       </a>
       <div class="footer-copy">
-        <img class="footer-experience-logo" src="assets/logo-explorando-full.png" alt="Explorando por el Tiempo">
+        <img class="footer-experience-logo" src="assets/logo-explorando-horizontal-color.png" alt="Explorando por el Tiempo">
         <span>Una experiencia del Museo de Ciencias Naturales A. Scasso</span>
       </div>
       <div class="footer-links">
